@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >-->
+    <!--<item android:drawable="@drawable/netload_01" android:duration="80"></item>-->
+    <!--<item android:drawable="@drawable/netload_02" android:duration="80"></item>-->
+    <!--<item android:drawable="@drawable/netload_03" android:duration="80"></item>-->
+    <!--<item android:drawable="@drawable/netload_04" android:duration="80"></item>-->
+    <!--<item android:drawable="@drawable/netload_05" android:duration="80"></item>-->
+    <!--<item android:drawable="@drawable/netload_06" android:duration="80"></item>-->
+
+<!--</animation-list>-->
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:fromDegrees="0"
+    android:toDegrees="359"
+    android:fillAfter="true"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:repeatCount="-1"
+    android:duration="720" />

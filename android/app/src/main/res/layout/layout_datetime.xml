@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:text="取消"
+            android:textColor="@color/qd_blue" />
+
+        <TextView
+            android:id="@+id/tv_now"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/qd_blue"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_selected"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:text="选取"
+            android:textColor="@color/qd_blue" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp">
+
+        <com.liaoye.studydemo.views.picker.WheelView
+            android:id="@+id/wv_day"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.liaoye.studydemo.views.picker.WheelView
+            android:id="@+id/wv_hour"
+            android:layout_width="70dp"
+            android:layout_height="match_parent" />
+
+        <com.liaoye.studydemo.views.picker.WheelView
+            android:id="@+id/wv_min"
+            android:layout_width="70dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>
