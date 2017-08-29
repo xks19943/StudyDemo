@@ -6,9 +6,7 @@ import com.facebook.react.ReactApplication;
 import com.theweflex.react.WeChatPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.imagepicker.ImagePickerPackage;
-import com.github.alinz.reactnativewebviewbridge.WebViewBridgePackage;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
-import com.eguma.barcodescanner.BarcodeScannerPackage;
 import com.lwansbrough.RCTCamera.RCTCameraPackage;
 import org.lovebing.reactnative.baidumap.BaiduMapPackage;
 import cn.jpush.reactnativejpush.JPushPackage;
@@ -35,9 +33,7 @@ public class MainApplication extends Application implements ReactApplication {
             new WeChatPackage(),
             new VectorIconsPackage(),
             new ImagePickerPackage(),
-            new WebViewBridgePackage(),
             new RNDeviceInfo(),
-            new BarcodeScannerPackage(),
             new RCTCameraPackage(),
             new BaiduMapPackage(getApplicationContext()),
             new JPushPackage(false,false),

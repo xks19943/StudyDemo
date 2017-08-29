@@ -12,29 +12,13 @@ import {
 import ItemCell from './ItemCell';
 
 export default class FlatListDemo extends React.PureComponent{
-    data = [
-        {title:'旧梦不须记'},
-        {title:'不装饰你的梦'},
-        {title:'在水中央'},
-        {title:'用爱将心偷'},
-        {title:'我是痴情无限'},
-        {title:'旧梦不须记'},
-        {title:'不装饰你的梦'},
-        {title:'在水中央'},
-        {title:'用爱将心偷'},
-        {title:'我是痴情无限'},
-        {title:'旧梦不须记'},
-        {title:'不装饰你的梦'},
-        {title:'在水中央'},
-        {title:'用爱将心偷'},
-        {title:'我是痴情无限'}
-    ];
 
     constructor(props){
         super(props);
         this.state = {
             selected: (new Map(): Map<string, boolean>),
-            isRefreshing:false
+            isRefreshing:false,
+          dataList:[]
         };
     }
 
@@ -63,17 +47,28 @@ export default class FlatListDemo extends React.PureComponent{
         },3000)
     }
 
+  componentDidMount() {
+    let data = [];
+    for (let i=0;i<3000;i++){
+      data.push({title:'旧梦不须记----'+i})
+    }
+    this.setState({
+      dataList:data
+    })
+  }
+
     render(){
         return(
             <View style={{flex:1, backgroundColor:Theme.bgColor}}>
                 <FlatList
                     style={{flex:1, backgroundColor:Theme.bgColor}}
-                    data={this.data}
+                    data={this.state.dataList}
                     extraData={this.state}
                     keyExtractor={(item)=>item.id}
                     renderItem={({item,index})=>this.renderItemCell({item,index})}
                     ItemSeparatorComponent={this.renderItemSeparator}
                     onRefrsh={()=>this.onRefresh()}
+                    legacyImplementation={true}
                     refreshing={this.state.isRefreshing}/>
             </View>
         )

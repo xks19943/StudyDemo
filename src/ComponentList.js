@@ -11,18 +11,25 @@ import {
 import ItemCell from './component/ItemCell';
 
 let data = [
-    {name:'AlertDemo'},
-    {name:'AppStateDemo'},
-    {name:'ActivityIndicatorDemo'},
-    {name:'AsyncStorageDemo'},
-    {name:'ButtonDemo'},
-    {name:'ClipboardDemo'},
-    {name:'DatePickerAndroidDemo'},
-    {name:'DimensionDemo'},
-    {name:'DeviceEventEmitterDemo'},
-    {name:'FetchDemo'},
-    {name:'FlatListDemo'},
-    {name:'LinkingDemo'},
+  {name:'AlertDemo'},
+  {name:'AppStateDemo'},
+  {name:'ARTDemo'},
+  {name:'ActivityIndicatorDemo'},
+  {name:'AsyncStorageDemo'},
+  {name:'ButtonDemo'},
+  {name:'ClipboardDemo'},
+  {name:'DatePickerAndroidDemo'},
+  {name:'DimensionDemo'},
+  {name:'DeviceEventEmitterDemo'},
+  {name:'DrawerLayoutAndroidDemo'},
+  {name:'FetchDemo'},
+  {name:'FlatListDemo'},
+  {name:'ListViewDemo'},
+  {name:'PermissionAndroidDemo'},
+  {name:'PickerDemo'},
+  {name:'SliderDemo'},
+  {name:'ScrollAndListDemo'},
+  {name:'ViewPagerAndroidDemo'}
     /*{name:'DrawerLayoutAndroid'},
     {name:'LayoutAnimation'},
     {name:'ListView'},
@@ -49,6 +56,7 @@ let data = [
 export default class ComponentList extends Component {
     constructor(props){
         super(props);
+
         this.state = {
             dataSource:new ListView.DataSource({rowHasChanged: (r1,r2)=>r1 !== r2}).cloneWithRows(data)
         }
