@@ -26,15 +26,20 @@ export default class FetchDemo extends Component{
     async toSearch() {
         let url = 'http://apis.juhe.cn/idcard/index?cardno='+this.state.id+'&dtype=json&key=10fe791004ea8137a12c915407291779';
          let responseJson = await FetchUtil.fetchGetJson(url);
+
+
+
          if(responseJson.resultcode == '200'){
-             this.setState({
-                 area:responseJson.result.area,
-                 sex:responseJson.result.sex,
-                 birthday:responseJson.result.birthday
-             });
+           this.setState({
+             area:responseJson.result.area,
+             sex:responseJson.result.sex,
+             birthday:responseJson.result.birthday
+           });
          }else{
              ToastAndroid.show(responseJson.reason,ToastAndroid.LONG);
          }
+
+
     }
 
 
