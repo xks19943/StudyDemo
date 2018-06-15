@@ -1,13 +1,14 @@
 
 'use strict';
-import React, {PropTypes, Component } from 'react';
+import React, {Component } from 'react';
 
 import { View, Text, Image, TouchableHighlight,TouchableOpacity, StyleSheet, PixelRatio }
     from 'react-native'
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-const IC_GREY_BORDER_COLOR = '#C8C7CC'
+const IC_GREY_BORDER_COLOR = '#C8C7CC';
+import PropTypes from 'prop-types';
 
 /**
  * 仿IOS 默认cell样式

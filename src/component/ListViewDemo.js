@@ -11,7 +11,6 @@ import {
   StyleSheet,
   ListView
 } from 'react-native';
-import SGListView  from 'react-native-sglistview';
 import ItemCell from './ItemCell';
 
 export default class ListViewDemo extends Component {

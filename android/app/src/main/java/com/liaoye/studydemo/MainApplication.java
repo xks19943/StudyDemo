@@ -3,12 +3,16 @@ package com.liaoye.studydemo;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import org.devio.rn.splashscreen.SplashScreenReactPackage;
+import com.beefe.picker.PickerViewPackage;
 import com.theweflex.react.WeChatPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.imagepicker.ImagePickerPackage;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
-import com.lwansbrough.RCTCamera.RCTCameraPackage;
+
 import org.lovebing.reactnative.baidumap.BaiduMapPackage;
+import org.reactnative.camera.RNCameraPackage;
+
 import cn.jpush.reactnativejpush.JPushPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -30,15 +34,22 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new SplashScreenReactPackage(),
+            new PickerViewPackage(),
             new WeChatPackage(),
             new VectorIconsPackage(),
             new ImagePickerPackage(),
             new RNDeviceInfo(),
-            new RCTCameraPackage(),
+            new RNCameraPackage(),
             new BaiduMapPackage(getApplicationContext()),
             new JPushPackage(false,false),
             new NativePackage()
       );
+    }
+
+    @Override
+    protected String getJSMainModuleName() {
+      return "index";
     }
   };
 

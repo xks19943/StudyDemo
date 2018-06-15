@@ -13,7 +13,6 @@ import ItemCell from './component/ItemCell';
 let data = [
     {name:'react-native-image-picker',screen:'ImagePickerTest'},
     {name:'react-native-deviceInfo',screen:'DeviceInfoTest'},
-    {name:'react-native-baidu-map',screen:'BaiDuMapTest'},
     {name:'react-native-camera',screen:'CameraTest'},
     {name:'MyToast',screen:'MyToastTest'},
     {name:'MyDialog',screen:'MyDialogTest'},

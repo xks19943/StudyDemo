@@ -29,9 +29,8 @@ public class NativePackage implements ReactPackage{
         modules.add(new MyKeyBoardModule(reactContext));
         modules.add(new DateTimePickerModule(reactContext));
         return modules;
-}
+    }
 
-    @Override
     public List<Class<? extends JavaScriptModule>> createJSModules() {
         return Collections.emptyList();
     }

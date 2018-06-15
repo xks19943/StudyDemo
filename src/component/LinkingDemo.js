@@ -27,7 +27,7 @@ export default class LinkingDemo extends Component{
     }
 
     componentDidMount() {
-        var url = Linking.getInitialURL().then((url) => {
+        Linking.getInitialURL().then((url) => {
             if (url) {
                 console.log('捕捉的URL地址为: ' + url);
             }

@@ -34,7 +34,7 @@ import DeviceInfoTest from './src/wheel/DeviceInfoTest';
 import MyToastTest from './src/wheel/MyToastTest';
 import MyDialogTest from './src/wheel/MyDialogTest';
 import MyProgressDialogTest from './src/wheel/MyProgressDialogTest';
-import BaiDuMapTest from './src/wheel/BaiDuMapTest';
+//import BaiDuMapTest from './src/wheel/BaiDuMapTest';
 import CameraTest from './src/wheel/CameraTest';
 import DateTimePickerTest from './src/wheel/DateTimePickerTest';
 
@@ -74,7 +74,6 @@ const App = StackNavigator({
   MyToastTest: {screen: MyToastTest},
   MyDialogTest: {screen: MyDialogTest},
   MyProgressDialogTest: {screen: MyProgressDialogTest},
-  BaiDuMapTest: { screen: BaiDuMapTest},
   CameraTest: { screen: CameraTest },
   DateTimePickerTest: { screen: DateTimePickerTest},
 },{
